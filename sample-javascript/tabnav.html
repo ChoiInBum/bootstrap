@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Scroll Spy</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/tabnav.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <style>
+    h1 {
+      padding-top: 10px;
+      padding-left: 40px;
+    }
+    p {
+      padding-top: 10px;
+      padding-left: 40px;
+    }
+    h2{
+      padding-top: 10px;
+      padding-left: 40px;
+    }
+    h3 {
+      padding-top: 10px;
+      padding-left: 40px;
+    }
+    h4 {
+      padding-left: 40px;
+    }
+  </style>
+  <body data-spy="scroll" data-target="#spybar">
+    <section class="container-fluid">
+      <div role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">
+            <h1>환영합니다. </h1>
+            <p>Home으로 오신걸 환영합니다.<p>
+            <p>Hi</p>
+            <div class="circle"></div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="profile">
+            <h1>훈련생</h1>
+            <h3>나이 : 27세</h3>
+            <h4>이름 : 최인범</h4>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="messages">
+            <h2>안녕하세요. 모바일 콘텐츠 프로그래밍 과정. 최인범 훈련생입니다.</h2>
+            <h3>앞으로 잘 부탁드립니다.</h3>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="settings">
+            <h1>설정</h1>
+            <h3>잠시 기다려주세요!</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid" style="margin-top: 50px;">
+      <ul class="nav nav-tabs" role="tablist" id="myTab">
+        <li role="presentation" class="active"><a href="#home1" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile1" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages1" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings1" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">1</div>
+        <div role="tabpanel" class="tab-pane" id="profile">2</div>
+        <div role="tabpanel" class="tab-pane" id="messages">3</div>
+        <div role="tabpanel" class="tab-pane" id="settings">4</div>
+      </div>
+
+      <script>
+      $(function () {
+        $('#myTab a:last').tab('show')
+      })
+      </script>
+    </section>
+
+    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/tabnav.js"></script>
+  </body>
+</html>

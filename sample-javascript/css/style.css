@@ -1,3 +1,7 @@
+.container-fluid {
+  padding-top: 20px;
+}
+
 .container {
-  border : 2px solid #2262b8;
+  padding-top: 20px;
 }
