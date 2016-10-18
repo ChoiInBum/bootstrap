@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/tabnav.css">
-    <link rel="stylesheet" href="./css/style.css">
   </head>
   <style>
     h1 {
@@ -30,14 +29,32 @@
       padding-left: 40px;
     }
   </style>
-  <body data-spy="scroll" data-target="#spybar">
+  <body data-spy="scroll" data-target="#tabnav">
     <section class="container-fluid">
       <div role="tabpanel">
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        <ul class="nav nav-tabs" role="tablist" id="yourTab">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+              Home
+            </a>
+          </li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+            <i class="fa fa-university" aria-hidden="true"></i>
+              Profile
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+              <i class="fa fa-bell" aria-hidden="true"></i>
+              Messages
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+              <i class="fa fa-cloud" aria-hidden="true"></i>
+              Settings
+            </a>
+          </li>
         </ul>
 
         <div class="tab-content">
@@ -65,30 +82,45 @@
     </section>
 
     <section class="container-fluid" style="margin-top: 50px;">
-      <ul class="nav nav-tabs" role="tablist" id="myTab">
-        <li role="presentation" class="active"><a href="#home1" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-        <li role="presentation"><a href="#profile1" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-        <li role="presentation"><a href="#messages1" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-        <li role="presentation"><a href="#settings1" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-      </ul>
+      <div role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist" id="myTab">
+          <li role="presentation" class="active">
+            <a href="#home1" aria-controls="home" role="tab" data-toggle="tab">
+              <i class="fa fa-cloud" aria-hidden="true"></i>
+              Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#profile1" aria-controls="profile" role="tab" data-toggle="tab">
+              <i class="fa fa-cloud" aria-hidden="true"></i>
+              Profile
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#messages1" aria-controls="messages" role="tab" data-toggle="tab">
+              <i class="fa fa-cloud" aria-hidden="true"></i>
+              Messages
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#settings1" aria-controls="settings" role="tab" data-toggle="tab">
+              <i class="fa fa-cloud" aria-hidden="true"></i>
+              Settings
+            </a>
+          </li>
+        </ul>
 
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">1</div>
-        <div role="tabpanel" class="tab-pane" id="profile">2</div>
-        <div role="tabpanel" class="tab-pane" id="messages">3</div>
-        <div role="tabpanel" class="tab-pane" id="settings">4</div>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home1">1</div>
+          <div role="tabpanel" class="tab-pane" id="profile1">2</div>
+          <div role="tabpanel" class="tab-pane" id="messages1">3</div>
+          <div role="tabpanel" class="tab-pane" id="settings1">4</div>
+        </div>
       </div>
-
-      <script>
-      $(function () {
-        $('#myTab a:last').tab('show')
-      })
-      </script>
     </section>
 
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
     <script src="./js/tabnav.js"></script>
   </body>
 </html>

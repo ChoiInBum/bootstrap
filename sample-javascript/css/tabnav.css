@@ -19,3 +19,7 @@ div.circle {
 .circle {
   padding: 40px;
 }
+
+#myTab i {
+  display: none;
+}
